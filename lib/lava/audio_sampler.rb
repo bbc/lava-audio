@@ -2,7 +2,7 @@ module Lava
 
   class AudioSampler
 
-    SAMPLE_TIME=0.01
+    SAMPLE_TIME=0.1
     DEFAULT_TMP_DIR = '/tmp/lava/audio/'
 
     attr_accessor :dir, :sox
@@ -18,7 +18,7 @@ module Lava
     end
 
     def volume
-      analyze(sample)
+      ( analyze(sample) * 100 ).to_i
     end
 
     def sample 

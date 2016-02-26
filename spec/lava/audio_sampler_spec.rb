@@ -22,8 +22,7 @@ RSpec.describe Lava::AudioSampler do
     let(:sampler) { Lava::AudioSampler.new(dir: tmp_dir) }
     
     it "performs the sample and returns a volume value" do
-      expect( sampler.volume ).to be_a Float
-      expect( sampler.volume ).to be > 0
+      expect( sampler.volume ).to be_a Fixnum
     end
   
   end
