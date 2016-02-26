@@ -16,10 +16,10 @@ You will need to do the following to get set up:
 
 ## Usage example
 
-  sampler = Lava::AudioSampler.new
-  10.times do
-    p sampler.volume
-  end
+    sampler = Lava::AudioSampler.new
+    10.times do
+      p sampler.volume
+    end
 
 You should get a value back between 0 and 100. 0 indicates no noise, 100 is
 the maximum volume for the microphone.
