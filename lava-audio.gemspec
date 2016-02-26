@@ -9,5 +9,4 @@ Gem::Specification.new do |s|
   s.files       = [ 'lib/lava/audio_sampler.rb' ]
   s.homepage    = 'https://github.com/bbc/lava-audio'
   s.license     = 'MIT'
-  s.add_runtime_dependency 'rmagick'
 end
